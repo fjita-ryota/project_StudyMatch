@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StudyMatch</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="hero">
+      <p class="label">Study Record App</p>
+      <h1>StudyMatch</h1>
+      <p class="description">
+        今日の学習を記録して、目標までの進捗を見える化するアプリです。
+      </p>
+    </section>
+
+
+   <section class="summary">
+  <div class="summary-card">
+    <p>今日の学習時間</p>
+    <strong id="totalTime">0時間</strong>
+  </div>
+
+  <div class="summary-card">
+    <p>目標達成率</p>
+    <strong id="progressText">0%</strong>
+    <div class="progress">
+      <div id="progressBar"></div>
+    </div>
+  </div>
+</section>
+
+<section class="card">
+  <h2>学習を記録する</h2>
+
+<section class="summary">
+  <div class="summary-card">
+    <p>今日の学習時間</p>
+    <strong id="totalTime">0時間</strong>
+  </div>
+
+  <div class="summary-card">
+    <p>目標達成率</p>
+    <strong id="progressText">0%</strong>
+    <div class="progress">
+      <div id="progressBar"></div>
+    </div>
+  </div>
+</section>
+
+    <section class="card">
+      <h2>学習を記録する</h2>
+
+      <div class="form">
+        <input id="title" type="text" placeholder="学習内容（例：TypeScript）" />
+        <input id="time" type="number" placeholder="学習時間（時間）" />
+        <button id="addBtn">追加する</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>学習履歴</h2>
+      <ul id="list" class="study-list"></ul>
+    </section>
+  </main>
+
+  <script src="dist/main.js"></script>
+</body>
+</html>
